@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        *{       
+            margin-top: 7px;
+        }
+        h1,p{
+            text-align: center;
+        }
+        body{
+            background-color: rgb(169, 247, 234);  
+        }
+        form{
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-right: 10px;          
+        }
+        header ul{
+            display: flex;
+        }
+        header #information{
+            width: 45%;
+            text-align: right;
+        }
+        header #option{
+            width:55%;
+            margin-left: 20px;
+        }
+        header li{
+            list-style: none;
+            margin-left: 10px;
+        }
+        select{
+            margin-top: 20px
+        }
+        select #student{
+            padding:25px;
+            width: 90px;
+        }
+        select #select{
+            width:120px;
+        }
+        #font{
+            margin-top: 22px;
+        }
+        .comment{
+        margin-top: 190px;
+        }
+        #box{
+            height: 30px;
+            width: 180px;
+        }
+    </style>
+    <body>
+        <h1>Survey Form</h1>
+        <header>
+            <form id= "survey-form">
+                <p>Let us know how we can improve freeCodeCamp</p>
+                <nav>
+                   <ul class="container">
+                    <li id="information">
+                        <h4>*Name:</h4>
+                        <h4>*Email:</h4>
+                        <h4>*Age:</h4>
+                        <h4>Which option best describes your current role:</h4>
+                        <h4>How likely is that you would recommend freeCodeCamp to a friend?</h4><br>
+                        <br>
+                        <h4>What do you like most in FCC:</h4>
+                        <h4>Things that should be improved in the future:</h4>
+                        <br>
+                        <div class="comment">
+                        <h4>Any comments or Suggestion?</h4>
+                        </div>
+                    </li>
+                    <li id="option">
+                        <input type="text" placeholder="Enter your name" name="name" required>
+                        <br> 
+                        <input type="email" placeholder="Enter your Email" name="email" style="margin-top: 15px;" required>
+                        <br>
+                        <input type="number" placeholder="Age" name="age" style="margin-top: 15px">
+                        <br>
+                        <select name="Student" id="student">
+                            <option value="Student">Student</option>
+                        </select>
+                        <br><br>
+                        <input type="radio" name="definitely" value="definitely" id="definitely">
+                        <label for="definitely">Definitely</label>
+                        <br>
+                        <input type="radio" name="maybe" value="maybe" id="maybe">
+                        <label for="maybe">Maybe</label>
+                        <br>
+                        <input type="radio" name="notsure" value="notsure" id="notsure">
+                        <label for="notsure">Not sure</label>
+                        <br>
+                        <select name="select" id="select">
+                            <option value="select">Select an option</option>
+                        </select>
+                        <br>
+                        <input type="checkbox" id="font">
+                        <label for ="font">Front-end Projects</label>
+                        <br>
+                        <input type="checkbox" id="back">
+                        <label for="back">Back-end Projects</label>
+                        <br>
+                        <input type="checkbox" id="data">
+                        <label for="challengers">Challengers</label>
+                        <br>
+                        <input type="checkbox" id="open">
+                        <label for="open">Open Source Community</label>
+                        <br>
+                        <input type="checkbox" id="gitter">
+                        <label for="gitter">Gitter help roams</label>
+                        <br>
+                        <input type="checkbox" id="video">
+                        <label for="video">Videos</label>
+                        <br>
+                        <input type="checkbox" id="city">
+                        <label for="city">City meetups</label>
+                        <br>
+                        <input type="checkbox" id="Wiki">
+                        <label for="Wiki">Wiki</label>
+                        <br>
+                        <input type="checkbox" id="forum">
+                        <label for="forum">Forum</label>
+                        <br>
+                        <input type="checkbox" id="additional">
+                        <label for="additional">Additional Courses</label>
+                        <br>
+                        <input type="text" placeholder="Enter your comment here ..." id="box" required>
+                    </li>
+                  </ul>
+                </nav>
+            </form>
+        </header>
+    </body>
+</html>
