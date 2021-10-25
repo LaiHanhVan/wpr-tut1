@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(233, 229, 229);
+}
+header{
+    border: 2.5px solid rgb(110, 4, 22);
+    cursor: pointer;
+    text-align: center;
+    width:100%;
+  }
+header h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color:rgb(112, 93, 67);
+    
+}
+.container{
+    display: flex;
+}
+hr{
+    margin-top: 20px;
+}
+.container #part1{
+    width: 95%;
+    list-style: none;
+}
+.container #part1 h2{
+    font-family: 'Lobster',cursive;
+    font-size: 30px;
+    margin-left: 30px;
+
+}
+
+.container #part2{
+    width: 19rem;
+    margin-top: 30px;
+    list-style: none;
+}
+.container #part2 li{
+    padding: 8px;
+}
+a{
+    color: rgb(201, 135, 12);
+}
+.container #part3{
+    margin-top:50px;
+    list-style: none;
+    margin-right: 15px;
+}
+.container #part3 a{
+    text-decoration: none;
+}
+.container #part3 li{
+    list-style: none;
+}
+.container #part3 #home {
+    background-color:rgb(27, 72, 109) ;
+    padding: 15px 47px;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.container #finding{
+    background-color:rgb(27, 72, 109) ;
+    margin-top: 10px;
+    padding: 15px 34px;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.container #course{
+    background-color:rgb(27, 72, 109) ;
+    margin-top: 10px;
+    padding: 15px 40px;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.container #staff{
+    background-color:rgb(27, 72, 109) ;
+    margin-top: 10px;
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.container #media{
+    background-color:rgb(27, 72, 109) ;
+    margin-top: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.container #prospectus{
+    background-color:rgb(27, 72, 109) ;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
