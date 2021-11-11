@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Tính lãi suất ngân hàng</h2>
+            <h3>Tiền vay</h3>
+            <input id="vay" type="number">
+            <h3>Lãi suất</h3>
+            <input id="lai" type="text">
+            <h3>Số năm</h3>
+            <input id="nam" type="number">
+            <button id="btn" type="button">Số tiền</button>
+            <br/><br/>
+            <span id="result"></span>
+        </div>
+        <script>
+            let vay,lai,nam;
+            let vayInput=document.getElementById('vay');
+            let laiInput=document.getElementById('lai');
+            let namInput=document.getElementById('nam');
+            let result=document.getElementById('result');
+            let btn= document.getElementById('btn');
+
+            function getValue(){
+                vay=parseFloat(vayInput.value);
+                lai=parseFloat(laiInput.value);
+                nam=parseFloat(namInput.value);
+            }
+            
+            btn.addEventListener('click', function(){
+                event.preventDefault();
+                getValue();
+                result.innerText = "Kết quả: " + (vay+nam*(vay*lai/100))
+            })
+        </script>
+    </body>
+</html>

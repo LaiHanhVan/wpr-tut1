@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="#" method="post">
+                <table>
+        <th><h3>Amount</h3>
+        <input id="amount" type="number" placeholder="Enter a number"></th>
+        <th><h3>From Curency</h3>
+        <select name="from">
+            <option value="vietNam">VietNam</option>
+        </select></th>
+        <th><h3>To Currency</h3>
+        <select name="to">
+            <option value="usd">USD</option>
+        </select></th>
+        </table>
+        <br/>
+        <button id="btn" type="button" onclick="chuyentien()">Convert</button>
+        </form>
+        <span id="result">Result:</span>
+        <script src="js/script.js"></script>
+        </div>
+    </body>
+</html>

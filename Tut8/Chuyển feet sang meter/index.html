@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h3>Nhập feet</h3>
+        <input id="feet" type="number">
+        <button id="btn_feet" type="button" onclick="foottoMeter">Convert</button>
+        <br/><span id="result1"></span>
+        <h3>Nhập meters</h3>
+        <input id="meters" type="number">
+        <button id="btn_meters" type="button" onclick="foottoMeter">Convert</button>
+        <br/><span id="result2"></span>
+        <script>
+            let feetInput=document.getElementById('feet');
+            let metersInput=document.getElementById('meters');
+            let btn_feet=document.getElementById('btn_feet');
+            let btn_meters=document.getElementById('btn_meters');
+            let result1=document.getElementById('result1');
+            let result2=document.getElementById('result2');
+
+            function foottoMeter(){
+                feet= parseFloat(feetInput.value);
+                meters = parseFloat(metersInput.value);
+            }
+
+            btn_feet.addEventListener('click', function(){
+                event.preventDefault();
+                foottoMeter();
+                result1.innerText= "Meters: "+ (0.305*feet);
+            })
+            btn_meters.addEventListener('click', function(){
+                event.preventDefault();
+                foottoMeter();
+                result2.innerText= "Feet: "+ (3.279*meters);
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+h3{
+    margin-left:50px;
+}
+input{
+    margin-left: 50px;
+    padding: 10px;
+    width: 110px;
+    border: 2px solid #999;
+}
+select{
+    margin-left: 35px;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid #999;
+}
+button{
+    background-color: rgb(236, 177, 27);
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    width: 110px;
+    border: 2px solid rgb(153, 153, 153);
+}

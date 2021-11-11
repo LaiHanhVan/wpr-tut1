@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button{
+            margin-top: 15px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Nhập bán kính đường tròn</h3>
+            <input id="bkinh" type="number">
+            <br/>
+            <button id="cv" type="button" onclick="getValue()">Chu vi</button>
+            
+            <span id="resultcv"></span><br/>
+            <button id="dt" type="button" onclick="getValue()">Diện tích</button>
+            <span id="resultdt"></span>
+        </div>
+        <script>
+            let bkinh;
+            let bkinhInput= document.getElementById('bkinh');
+            let cv=document.getElementById('cv');
+            let dt=document.getElementById('dt');
+            let resultcv = document.getElementById('resultcv');
+            let resultdt= document.getElementById('resultdt');
+
+            function getValue(){
+                bkinh= parseFloat(bkinhInput.value);
+            }
+
+            cv.addEventListener('click', function(){
+                event.preventDefault();
+                getValue();
+                resultcv.innerText="Chu vi hình tròn là: " + (2*bkinh*3.14);
+            }) 
+
+            dt.addEventListener('click', function(){
+                event.preventDefault();
+                getValue();
+                resultdt.innerText="Diện tích hình tròn là: " + (bkinh*bkinh*3.14);
+            }) 
+        </script>
+    </body>
+</html>
