@@ -1,0 +1,107 @@
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculate</title>
+      <style>
+         form {
+            background: #ccc;
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            border-radius: 5px;
+         }
+         form * {
+            box-sizing: border-box;
+         }
+         form table {
+            width: 100%;
+            border-collapse: collapse;
+         }
+         form table tr, form table td {
+            border: 1px solid #eee;
+         }
+         form table tr:first-child input {
+            height: 50px;
+            padding: 0 10px;
+            font-weight: 700;
+         }
+         form table tr:not(:first-child) td {
+            height: 70px;
+         }
+         form table tr:not(:first-child) td input {
+            height: 100%;
+         }
+         form table input {
+            width: 100%;
+            display: block;
+            border: 0;
+            font-size: 16px;
+         }
+         form table input:focus {
+           outline: none;
+         }
+         form table input:hover {
+            background: #eee;
+            transition: all .2s ease-in-out;
+         }
+         form table input.operator {
+            font-weight: 700;
+            color: #fff;
+            background: #ffcc00;
+         }
+      </style>
+   </head>
+   <body>
+      <form name="calculator">
+         <table>
+           <tr>
+             <td colspan="4">
+               <input type="text" name="display" id="result" disabled>
+             </td>
+           </tr>
+           <tr>
+             <td><input type="button" name="one" value="1" onclick="dis('1')"></td>
+             <td><input type="button" name="two" value="2" onclick="dis('2')"></td>
+             <td><input type="button" name="three" value="3" onclick="dis('3')"></td>
+             <td><input type="button" class="operator" name="plus" value="+" onclick="dis('+')"></td>
+           </tr>
+           <tr>
+             <td><input type="button" name="four" value="4" onclick="dis('4')"></td>
+             <td><input type="button" name="five" value="5" onclick="dis('5')"></td>
+             <td><input type="button" name="six" value="6" onclick="dis('6')"></td>
+             <td><input type="button" class="operator" name="minus" value="-" onclick="dis('-')"></td>
+           </tr>
+           <tr>
+             <td><input type="button" name="seven" value="7" onclick="dis('7')"></td>
+             <td><input type="button" name="eight" value="8" onclick="dis('8')"></td>
+             <td><input type="button" name="nine" value="9" onclick="dis('9')"></td>
+             <td><input type="button" class="operator" name="times" value="x" onclick="dis('*')"></td>
+           </tr>
+           <tr>
+             <td><input type="button" class="operator" id="clear" name="clear" value="C" onclick="clr()"></td>
+             <td><input type="button" class="operator" name="zero" value="0" onclick="dis('0')"></td>
+             <td><input type="button" class="operator" name="doit" value="=" onclick="solve()"></td>
+             <td><input type="button" class="operator" name="div" value="/" onclick="dis('/')"></td>
+           </tr>
+         </table>
+         <script>
+            function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+         </script>
+       </form>      
+   </body>
+</html>   
