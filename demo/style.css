@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(213, 243, 223);
+    margin:0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: 80vh;    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding: 0px 5%;
+}
+nav ul{
+    display: flex;
+}
+.toggle{
+    display: none;
+}
+nav ul li a{
+    margin: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+}
+.logo{
+    max-width: 10px;
+}
+.active{
+    color:#2d2a2a;
+    font-weight: bold;
+}
+.text-container p:nth-child(1){
+	font-family: calibri;
+	font-weight:bold;
+	color:#6d6d6d;
+	font-size:35px;
+    line-height: 30px;
+}
+.text-container p:nth-child(2){
+	font-family:calibri;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#1a1a1a;
+	font-size:20px;	
+}
+.text-container p:nth-child(3){
+	font-family: myriad pro regular;
+	color: #403e3e;
+	font-size:16px;
+	line-height:28px;
+}
+.text-container p{
+	margin:45px 0px 25px;
+	line-height:20px;
+}
+.text-container button{
+	width:130px;
+	height:42px;
+	border-radius:10px;
+	font-family:calibri;
+	font-weight:bold;
+	font-size: 14px;
+	outline:none;
+	margin:0px 10px;
+	
+}
+.intro{
+	display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    color:aliceblue;
+    font-size: 1.25rem;
+    background-color: rgb(213, 243, 223);
+}
+.text-container{
+    flex: 2 0 55%;
+    padding: 2rem 0 2rem 2rem;
+}
+.intro-image{
+    flex: 1 0 40%;
+    padding-right: 2rem;
+    text-align: right;
+}
+.intro-image img{
+    width:550px;
+    height:450px;
+}
+.contact-btn{
+	border:2px solid #373636;
+	color:#373636;
+	background-color:transparent;
+	
+}
+button:active{
+	transform:scale(1.1);
+}

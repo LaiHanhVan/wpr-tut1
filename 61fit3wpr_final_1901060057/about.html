@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">Van Van</a>
+        <div class="menu"></div>
+        <div class="nav">
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="tour.html">Tours</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="title">
+                        <h1>About us</h1>
+                    </div>
+                    <div class="content">
+                        <p>Throughout 13 years of us, we always focus on delivering true values to our clients. We understand that our customers’ expectation 
+                            the best in each moment during their trips so we seriously challenge ourselves with the goal to bring experiences 
+                            beyond the expectations of our customers, each and every time when they travel. We does not limit our development and success in the region.
+                            “Reaching out to the World is our ultimate aim in the future".</p>
+                            <div class="button">
+                                <a href="">Read more</a>
+                            </div>
+                    </div>
+                    <div class="social">
+                        <img src="img/facebook.png">
+                        <img src="img/instagram.png">
+                        <img src="img/twitter.png">
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/about.jpg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Booking & Payment</h4>
+                    <ul>
+                        <li><a href="#">Payment Guide</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Booking Guide</a></li>
+                        <li><a href="#">Create Your Own Trip</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Travel Guide</h4>
+                    <ul>
+                        <li><a href="#">Hoian Travel Guide</a></li>
+                        <li><a href="#">Hanoi Travel Guide</a></li>
+                        <li><a href="#">Sapa Travel Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="icon-media">
+                        <a href="#"><img src="img/facebook.png"></a>
+                        <a href="#"><img src="img/instagram.png"></a>
+                        <a href="#"><img src="img/twitter.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        const menuBtn= document.querySelector(".menu");
+        const nav=document.querySelector(".nav");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            nav.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
